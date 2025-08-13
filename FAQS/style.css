@@ -19,6 +19,7 @@
   border-top: 2px solid;
   border-bottom: 2px solid;
   cursor: pointer;
+  height: 100px;
 }
 
 .faq:last-child {
@@ -33,18 +34,20 @@
 }
 
 .faq_answer {
-  opacity: 0;
-  transition: all .3s ease-in;
+  display: none;
+  height: 0;
+  transition:height .10s ease-in;
 }
 .faq.active .faq_answer {
-  opacity: 1;
+  display: block;
+  height: 300px;
 }
 
 
 .faq_toggle {
   font-size: 30px;
   font-weight: bold;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .faq.active .faq_toggle {
